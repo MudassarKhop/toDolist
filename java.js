@@ -85,7 +85,6 @@ function getCurrentTask(event) {
 
 function editTask(event) {
 	let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
-	// check if task is empty
 	if (event.value === "") {
 		alert("Task is empty!");
 		event.value = currentTask;
