@@ -28,12 +28,12 @@
 .app form {
 	display: flex;
 	width: 100%;
-	background-color: #e6e6e6;
+	background-color: #4e4e4e;
 }
 
 .app form input {
 	border: none;
-	background-color: #e6e6e6;
+	background-color: #4e4e4e;;
 	font-size: 18px;
 	color: white;
 	padding: 10px;
@@ -69,7 +69,7 @@
 
 .app ul li {
 	padding: 10px;
-	background-color: #e6e6e6;
+	background-color: #4e4e4e;;
 	border-bottom: 1px solid #3a4674;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .check:checked {
-	background-color: #1dd2af;
+	background-color: #4e4e4e;;
 }
 
 .task {
