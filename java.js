@@ -8,12 +8,14 @@ document.querySelector("form").addEventListener("submit", (e) => {
 });
 
 function loadTasks() {
-	// check if localStorage has any tasks
-	// if not then return
-	if (localStorage.getItem("tasks") == null) return;
-
-	// Get the tasks from localStorage and convert it to an array
-	let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
+	let tasks = Array.from(JSON.parse( localStorage.getItem("tasks"))) ?
+            JSON.parse( localStorage.getItem("tasks")) : [
+    {
+        id: 1,
+        item: 'TV Stand',
+        createdDate: new Date()
+    }
+];
 
 	// Loop through the tasks and add them to the list
 	tasks.forEach((task) => {
@@ -87,7 +89,7 @@ function removeTask(event) {
 }
 
 // store current task to track changes
-var currentTask = null;
+let currentTask = null;
 
 // get current task
 function getCurrentTask(event) {
@@ -122,7 +124,7 @@ function editTask(event) {
 }
 
 function sortList() {
-	var list, i, switching, b, shouldSwitch;
+	let list, i, switching, b, shouldSwitch;
 	list = document.getElementById("id01");
 	switching = true;
 	while (switching) {

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>ToDoList</title>
 		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
@@ -15,24 +15,12 @@
 					<input type="text" placeholder="Add new task..." />
 					<button type="submit">&plus;</button>
 				</form>
-				<ul id="id01"></ul>
-				<button class="alph-btm" onclick="sortList()">
-					Sort alphabetically
-				</button>
-
-				<ul>
-					<li>
-						<input type="checkbox" onclick="taskComplete(this)" class="check" />
-						<input
-							type="text"
-							value="Exercise"
-							class="task"
-							onfocus="getCurrentTask(this)"
-							onblur="editTask(this)"
-						/>
-						<i class="fa fa-trash" onclick="removeTask(this)"></i>
-					</li>
-				</ul>
+		
+			<ul id="id01"></ul>
+			<button class="alph-btm" onclick="sortList()">
+				SORT ALPHABETICALLY
+			</button>
+			<ul>
 			</div>
 		</div>
 		<script src="/java.js"></script>
